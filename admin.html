@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">
+                    <img src="logo.png" alt="Logo">
+                </a></li>
+                <li><a href="home.html">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-item">Home</span>
+                </a></li>
+                <li><a href="admin.html">
+                    <i class="fas fa-book-open"></i>
+                    <span class="nav-item">Library</span>
+                </a></li>
+                <li><a href="login.html">
+                    <i class="fas fa-user-graduate"></i>
+                    <span class="nav-item">Student</span>
+                </a></li>
+                <li><a href="contact.html">
+                    <i class="fas fa-envelope"></i>
+                    <span class="nav-item">Contact</span>
+                  </a></li>
+            </ul>
+        </nav>
+
+        <div class="form-area">
+            <div class="form-container sign-in">
+              <form id="loginForm" onsubmit="return validateLogin()">
+                <h1>Sign In</h1>
+                <span>or use your XIE ID for password</span>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+                <p id="error-msg" class="error-msg"></p>
+            </form>
+            
+            </div>
+
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Welcome Back!</h1>
+                        <p>Enter Librarian details to see students entered in the library</p>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Welcome Back!</h1>
+                        <p>Enter Librarian details to see students entered in the library</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

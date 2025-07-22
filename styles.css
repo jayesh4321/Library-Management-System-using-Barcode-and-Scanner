@@ -1,0 +1,170 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(226, 226, 226);
+  margin: 0; /* Ensure no margin on body */
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  background: #fff;
+  overflow: hidden;
+  transition: width 1s, left 1s;
+}
+
+nav:hover {
+  width: 220px;
+}
+
+.logo {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding-bottom: 3rem;
+  transition: margin-left 1s;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+nav:hover .logo span {
+  opacity: 1;
+}
+
+a {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background 0.5s;
+}
+
+nav .fas {
+  width: 70px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  transition: color 0.5s;
+}
+
+.nav-item {
+  margin-left: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+nav:hover .nav-item {
+  opacity: 1;
+}
+
+a:hover {
+  background: #eee;
+}
+
+a:hover i {
+  color: #34AF6D;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 220px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.scan-section {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input, button {
+  margin: 10px 0;
+  padding: 8px;
+  width: 300px;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Filter Section */
+.filter-section {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 10px;
+  z-index: 10;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Print Button */
+.print-section {
+  position: sticky;
+  bottom: 20px;
+  background: #fff;
+  padding: 10px;
+  z-index: 10;
+  border-top: 1px solid #ddd;
+}
